@@ -71,6 +71,32 @@
             $this->assertEquals("1ily", $result);
 
         }
+        function test_outputS()
+        {
+            //arrange
+            $test_LeetSpeak = new LeetSpeak;
+            $input = "Bus";
+
+            //act
+            $result = $test_LeetSpeak->toLeetSpeak($input);
+
+            //assert
+            $this->assertEquals("Buz", $result);
+
+        }
+        function test_outputSFirst()
+        {
+            //arrange
+            $test_LeetSpeak = new LeetSpeak;
+            $input = "he sings Sassy Say sings Sassy";
+
+            //act
+            $result = $test_LeetSpeak->toLeetSpeak($input);
+
+            //assert
+            $this->assertEquals("h3 singz Sazzy Say singz Sazzy", $result);
+
+        }
     }
 
 
