@@ -58,7 +58,21 @@
             $this->assertEquals("p00p", $result);
 
         }
+        function test_outputL()
+        {
+            //arrange
+            $test_LeetSpeak = new LeetSpeak;
+            $input = "Lily";
+
+            //act
+            $result = $test_LeetSpeak->toLeetSpeak($input);
+
+            //assert
+            $this->assertEquals("1ily", $result);
+
+        }
     }
+
 
 
 
