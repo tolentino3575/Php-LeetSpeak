@@ -88,13 +88,13 @@
         {
             //arrange
             $test_LeetSpeak = new LeetSpeak;
-            $input = "he sings Sassy Say sings Sassy";
+            $input = "She sings Sassy Say sings Sassy";
 
             //act
             $result = $test_LeetSpeak->toLeetSpeak($input);
 
             //assert
-            $this->assertEquals("h3 singz Sazzy Say singz Sazzy", $result);
+            $this->assertEquals("Sh3 singz Sazzy Say singz Sazzy", $result);
 
         }
     }
