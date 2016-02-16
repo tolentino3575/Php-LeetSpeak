@@ -22,6 +22,10 @@
                 {
                     array_push($new_array, "1");
                 }
+                elseif ($character == "t" )
+                {
+                    array_push($new_array, "7");
+                }
                 elseif ( $character == "s" || $character == "S")
                 {
                     if ($i == 0 || $string_to_array[$i-1] == " "){
