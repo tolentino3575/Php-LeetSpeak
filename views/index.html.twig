@@ -8,6 +8,15 @@
         <title></title>
     </head>
     <body>
+        <h1>LEETSPEAK</h1>
+        <form action="/LeetSpeak">
+            <label for="words">Enter some words</h1>
+            <input id="words" name="words" type="text">
+            <button type="submit">Submit</button>
+        </form>
 
+        {% if leet is not empty %}
+            <h2>{{ leet }}</h2>
+        {% endif %}
     </body>
 </html>
